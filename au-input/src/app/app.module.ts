@@ -7,10 +7,9 @@ import {AuInputModule} from "./lib/au-input.module";
 import {HttpClientModule} from "@angular/common/http";
 
 
-
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
