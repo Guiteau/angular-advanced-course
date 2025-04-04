@@ -1,20 +1,20 @@
-import {Directive, HostListener} from '@angular/core';
+import { Directive, HostListener } from "@angular/core";
 
 @Directive({
-    selector: 'input'
+  selector: "au-fa-input input",
 })
 export class InputRefDirective {
+  focus = false;
 
-    focus = false;
+  constructor() {}
 
-    @HostListener('focus')
-    onFocus() {
-        this.focus = true;
-    }
+  @HostListener("focus")
+  onFocus() {
+    this.focus = true;
+  }
 
-    @HostListener('blur')
-    onBlur() {
-        this.focus = false;
-    }
-
+  @HostListener("blur")
+  onBlur() {
+    this.focus = false;
+  }
 }
