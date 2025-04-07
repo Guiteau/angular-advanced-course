@@ -11,7 +11,7 @@
 </ng-template>
 
 <ng-container *ngIf="headerTemplate; else defaultTabsHeader">
-  <ng-container *ngTemplateOutlet="headerTemplate; context: tabsContext">
+  <ng-container *ngTemplateOutlet="headerTemplate ? headerTemplate : defaultTabsHeader; context: tabsContext">
   </ng-container>
 </ng-container>
 
