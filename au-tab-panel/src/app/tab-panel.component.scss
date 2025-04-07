@@ -3,11 +3,9 @@
 :host {
   box-shadow: $box-shadow;
   display: block;
-  border-radius:  $border-radius;
 }
 
 .tab-panel-buttons {
-
   list-style: none;
   text-align: left;
   margin-bottom: 0;
@@ -16,11 +14,9 @@
   background: $primary;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-
 }
 
 .tab-panel-buttons li {
-
   display: inline-block;
   color: white;
   background: $primary-tint-1;
@@ -32,15 +28,10 @@
   border-left: $tab-border;
   border-right: $tab-border;
   margin-right: 5px;
-
+  
   &.selected {
     background: white;
     color: $text;
     border-bottom: 1px solid white;
   }
-
 }
-
-
-
-
